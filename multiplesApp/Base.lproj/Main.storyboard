@@ -24,11 +24,19 @@
                                     <constraint firstAttribute="height" constant="600" id="uGx-aI-MTR"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="sOs-aD-BTe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="sOs-aD-BTe">
                                 <rect key="frame" x="182" y="413" width="236" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="7CQ-GL-5il"/>
+                                    <constraint firstAttribute="height" constant="167" id="YYd-d7-PgC"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input a multiple to add by." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83A-BK-KAc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input a multiple to add by." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83A-BK-KAc">
                                 <rect key="frame" x="186" y="352" width="228" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ej2-Ij-hZ4"/>
+                                    <constraint firstAttribute="width" constant="228" id="Xer-6N-6qN"/>
+                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -47,8 +55,11 @@
                             <constraint firstItem="RES-Nj-mby" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Pjo-YD-qaa"/>
                             <constraint firstItem="lfc-en-GsE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rhq-MO-GmJ"/>
                             <constraint firstItem="lfc-en-GsE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sqg-XX-Min"/>
+                            <constraint firstItem="sOs-aD-BTe" firstAttribute="top" secondItem="83A-BK-KAc" secondAttribute="bottom" constant="31" id="TM2-8E-ZNO"/>
                             <constraint firstItem="RES-Nj-mby" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8W-Dx-fI5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfc-en-GsE" secondAttribute="bottom" id="jVf-MG-Hmb"/>
+                            <constraint firstItem="sOs-aD-BTe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4d-xy-2BT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sOs-aD-BTe" secondAttribute="bottom" constant="20" id="zE1-ff-cSy"/>
                         </constraints>
                     </view>
                 </viewController>
