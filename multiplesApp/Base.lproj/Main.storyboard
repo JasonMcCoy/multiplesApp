@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MULTIPLES" translatesAutoresizingMaskIntoConstraints="NO" id="RES-Nj-mby" userLabel="multiplesLogo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MULTIPLES" translatesAutoresizingMaskIntoConstraints="NO" id="RES-Nj-mby" userLabel="multiplesLogo">
                                 <rect key="frame" x="109" y="44" width="383" height="206"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="206" id="YmC-Hk-DKN"/>
@@ -85,7 +85,6 @@
                             <constraint firstItem="lfc-en-GsE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="1" id="Y3M-Ci-weQ"/>
                             <constraint firstItem="iq6-tW-YfO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y8A-va-YcY"/>
                             <constraint firstItem="83A-BK-KAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eHs-8X-IRE"/>
-                            <constraint firstItem="RES-Nj-mby" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fd1-4s-iMY"/>
                             <constraint firstItem="lfc-en-GsE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jLr-f7-QFp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfc-en-GsE" secondAttribute="bottom" id="nsv-eS-zwa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iq6-tW-YfO" secondAttribute="bottom" constant="20" id="ot7-Ue-3kJ"/>
