@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     // Properties
     var maxTaps = 0
     var currentTaps = 0
+    var sum: Int = 0
     
     // First Screen user sees
     @IBOutlet weak var multiplesLogo: UIImageView!
@@ -38,7 +39,8 @@ class ViewController: UIViewController {
         pressAddToAddLabel.hidden = false
         addButton.hidden = false
         
-        maxTaps = Int(inputMultipleTextField.text!)!
+        //maxTaps = Int(inputMultipleTextField.text!)!
+        sum = Int(inputMultipleTextField.text!)!
         updatePressToAddLabel()
         }
     }
@@ -65,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     func updatePressToAddLabel() {
-        pressAddToAddLabel.text = "\(currentTaps) Taps"
+        inputMultipleTextField.text = "\(currentTaps)"
     }
     
     // Pressing this button will take the current running sum, add the multiple to it and then give it a new sum
