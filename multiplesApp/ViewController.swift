@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     // Properties
-    var maxTaps = 0
-    var currentTaps = 0
-    var sum: Int = 0
+//    var maxTaps = 0
+//    var currentTaps = 0
+    var multiple = 0
+    var runningSum = 0
+    let MAX_SUM = 50
     
     // First Screen user sees
     @IBOutlet weak var multiplesLogo: UIImageView!
@@ -40,13 +42,14 @@ class ViewController: UIViewController {
         addButton.hidden = false
         
         //maxTaps = Int(inputMultipleTextField.text!)!
-        sum = Int(inputMultipleTextField.text!)!
-        updatePressToAddLabel()
+        multiple = Int(inputMultipleTextField.text!)!
+        runningSum = 0
+//        updatePressToAddLabel()
         }
     }
     
         func restartGame() {
-            maxTaps = 0
+            multiple = 0
             inputMultipleTextField.text = ""
             
             multiplesLogo.hidden = false
@@ -59,21 +62,27 @@ class ViewController: UIViewController {
     
     
     func isGameOver() -> Bool {
-        if currentTaps >= maxTaps {
+        if runningSum >= MAX_SUM {
             return true
             } else {
             return false
         }
     }
     
-    func updatePressToAddLabel() {
-        inputMultipleTextField.text = "\(currentTaps)"
+//    func updatePressToAddLabel() {
+//        inputMultipleTextField.text = "\(currentTaps)"
+//    }
+    func updatePressToAddLabel(oldSum: Int, mul: Int, newSum: Int) {
+        inputMultipleTextField.text = "\(oldSum) + \(mul) = \(newSum)"
     }
     
     // Pressing this button will take the current running sum, add the multiple to it and then give it a new sum
     @IBAction func addButtonAction(sender: AnyObject) {
-        currentTaps += 1
-        updatePressToAddLabel()
+        let newSum = runningSum + multiple
+        updatePressToAddLabel(runningSum, mul: multiple, newSum: newSum)
+        runningSum += multiple
+//        currentTaps += 1
+//        updatePressToAddLabel()
         
         if isGameOver() {
             restartGame()
