@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         pressAddToAddLabel.hidden = false
         addButton.hidden = false
         
+        resetLbl()
+        
         //maxTaps = Int(inputMultipleTextField.text!)!
         multiple = Int(inputMultipleTextField.text!)!
         runningSum = 0
@@ -60,6 +62,9 @@ class ViewController: UIViewController {
             addButton.hidden = true
         }
     
+    func resetLbl() {
+        pressAddToAddLabel.text = "Press Add to add!"
+    }
     
     func isGameOver() -> Bool {
         if runningSum >= MAX_SUM {
@@ -73,7 +78,7 @@ class ViewController: UIViewController {
 //        inputMultipleTextField.text = "\(currentTaps)"
 //    }
     func updatePressToAddLabel(oldSum: Int, mul: Int, newSum: Int) {
-        inputMultipleTextField.text = "\(oldSum) + \(mul) = \(newSum)"
+        pressAddToAddLabel.text = "\(oldSum) + \(mul) = \(newSum)"
     }
     
     // Pressing this button will take the current running sum, add the multiple to it and then give it a new sum
